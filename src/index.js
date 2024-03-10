@@ -11,7 +11,7 @@ const rootElement = document.getElementById('root');
 console.log("about to render");
 render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter basename="http://injoonyoun.github.io/portfolio">
         <App />
     </BrowserRouter>
   </React.StrictMode>,
