@@ -98,6 +98,15 @@
     /*border: 1px solid green;*/
 }
 
+@media screen and (max-width: 767px) {
+
+    .main-title{
+        font-family: 'vcrosd';
+        font-size: 5rem;
+    }
+
+}
+
 .categories{
     padding-bottom: 4rem;
     padding-left: 2rem;

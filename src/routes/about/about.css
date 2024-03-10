@@ -1,0 +1,9 @@
+.ab-page{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.ab-title{
+    font-size: 10rem;
+}

@@ -3,7 +3,9 @@ import './shop.css';
 
 const Shop = () => {
     return (
-        <div><h1>SHOP</h1></div>
+        <section className="shop-page">
+            <h1 className="shop-title">SHOP</h1>
+        </section>
     );
   
 }
