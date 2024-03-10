@@ -11,13 +11,13 @@ import WorkThree from './routes/work3/work3.components';
 const App = () => {
   return (
     <Routes>
-      <Route path='/portfolio' element={<Navigation />}>
+      <Route path='/' element={<Navigation />}>
         <Route index element={<Home />} />
-        <Route path='/portfolio/shop' element={<Shop />} />
-        <Route path='/portfolio/about' element={<About />} />
-        <Route path='/portfolio/works/1' element={<WorkOne />} />
-        <Route path='/portfolio/2' element={<WorkTwo />} />
-        <Route path='/portfolio/works/3' element={<WorkThree />} />
+        <Route path='/shop' element={<Shop />} />
+        <Route path='/about' element={<About />} />
+        <Route path='work/1' element={<WorkOne />} />
+        <Route path='work/2' element={<WorkTwo />} />
+        <Route path='work/3' element={<WorkThree />} />
       </Route>
     </Routes>
   );
