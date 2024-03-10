@@ -10,7 +10,7 @@ import { gsap } from "gsap";
 const works = [
     {id: 1, name: 'CERAMICS', image: ceramic, fontFamily: "magazine"},
     {id: 2, name: 'PROJECT', image: crochet, fontFamily: "plank"},
-    {id: 3, name: 'CAWI', image: none, fontFamily: "minecraft"}
+    {id: 3, name: 'CAWI TOOLKIT', image: none, fontFamily: "minecraft"}
 ];
 
 const Square = ({ work, index, fontFamily, handleWorkHover, handleWorkHoverOut }) => {
