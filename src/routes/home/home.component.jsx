@@ -1,41 +1,23 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Outlet, Link } from 'react-router-dom';
 import './home.css'; 
 import none from '../../assets/img/default.jpg'
 import ceramic from '../../assets/img/ceramic.jpg'
 import crochet from '../../assets/img/crochet.jpg'
+import { gsap } from "gsap";
+
 
 const works = [
-    {id: 1, name: 'CERAMICS', image: ceramic},
-    {id: 2, name: 'PROJECT', image: crochet},
-    {id: 3, name: 'CAWI TOOLKIT', image: none}
+    {id: 1, name: 'CERAMICS', image: ceramic, fontFamily: "minecraft"},
+    {id: 2, name: 'PROJECT', image: crochet, fontFamily: "plank"},
+    {id: 3, name: 'CAWI TOOLKIT', image: none, fontFamily: "magazine"}
 ];
 
-const Square = ({ work, index }) => {
-
-    const indexRef = useRef(index); 
-
-    useEffect(() => {
-        const handleClick = () => {
-            console.log(`Work element ${indexRef.current} clicked`);
-        };
-
-        const squareElement = document.getElementById(`work-${indexRef.current}`);
-        if (squareElement) {
-            squareElement.addEventListener('click', handleClick);
-        }
-
-        return () => {
-            if (squareElement) {
-                squareElement.removeEventListener('click', handleClick);
-            }
-        };
-    }, []);
-    
+const Square = ({ work, index, fontFamily, handleWorkHover, handleWorkHoverOut }) => {
     return (
         <div className="work" id={`work-${index}`}>
             <Link className="work-links" to={`/works/${work.id}`}>
-                <img className="work-img" src={work.image} alt={work.name} />
+                <img className="work-img" src={work.image} alt={work.name} onMouseEnter={() => handleWorkHover(fontFamily)} onMouseLeave={handleWorkHoverOut} />
                 <h3>{work.name}</h3>
                 <p>{work.description}</p>
             </Link>
@@ -43,7 +25,7 @@ const Square = ({ work, index }) => {
     );
 };
 
-const Carousel = () => {
+const Carousel = ({ handleWorkHover, handleWorkHoverOut }) => {
     const carouselRef = useRef(null);
     const loopedWorks = [...works, ...works, ...works];
 
@@ -69,11 +51,14 @@ const Carousel = () => {
         };
 
         handleInitialScroll();
-        carouselRef.current.addEventListener("scroll", handleScroll);
-        
-        return () => {
-            carouselRef.current.removeEventListener("scroll", handleScroll);
-        };
+
+        const instance = carouselRef.current;
+        instance.addEventListener("scroll", handleScroll);
+
+        return() => {
+            instance.removeEventListener("scroll", handleScroll);
+        }
+
     }, []);
 
     useEffect(() => {
@@ -105,29 +90,42 @@ const Carousel = () => {
     return (
         <div className="carousel" ref={carouselRef}>
             {loopedWorks.map((work, index) => (
-                <Square key={index} work={work} index={index} />
+                <Square 
+                key={index} 
+                work={work} 
+                index={index}
+                fontFamily={work.fontFamily} 
+                handleWorkHover={handleWorkHover} // Pass down handleWorkHover prop
+                handleWorkHoverOut={handleWorkHoverOut} // Pass down handleWorkHoverOut prop
+            />
             ))}
         </div>
     );
-};;
+};
 
 
 const Home = () => {
+    const titleRef = useRef(null);
+
+    const handleWorkHover = (fontFamily) => {
+        gsap.to(titleRef.current, { fontFamily, duration: 0 });
+    };
+
+    const handleWorkHoverOut = () => {
+        gsap.to(titleRef.current, { fontFamily: "vcrosd", duration: 0 });
+    };
+
     return (
         <section className="page">
             <section className="content">
-                <Carousel works={works} />
+                <Carousel handleWorkHover={handleWorkHover} handleWorkHoverOut={handleWorkHoverOut}  />
             </section>
             <section className="title">
-                <h1 className="main-title">YOON IN JOON</h1>
-                <div className="categories">
-                    <p>WEB DEVELOPMENT</p>
-                    <p>FASHION</p>
-                    <p>ART</p>
-                </div>
+                <h1 ref={titleRef} className="main-title" id="title">YOON IN JOON</h1>
             </section>
         </section>
     );
   
-}
+};
+
 export default Home; 

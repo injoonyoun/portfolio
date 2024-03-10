@@ -19,24 +19,49 @@
 }
 
 @font-face {
-    font-family: 'skincake';
-    src: url(../../assets/fonts/Skincake.woff2) format('woff2');
-}
-
-@font-face {
-    font-family: 'superocean';
-    src: url(../../assets/fonts/SuperOcean.woff2) format('woff2');
-}
-
-@font-face {
     font-family: 'vogue';
     src: url(../../assets/fonts/Vogue-Regular.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'docallisme';
+    src: url(../../assets/fonts/DOCALLISMEONSTREET.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'marola';
+    src: url(../../assets/fonts/Marola.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'marola';
+    src: url(../../assets/fonts/Marola.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'vcrosd';
+    src: url(../../assets/fonts/VCROSDMono.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'heartless';
+    src: url(../../assets/fonts/Heartless.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'magazine';
+    src: url(../../assets/fonts/MagazineLetterByBrntlbrnl-Rg.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'dyna';
+    src: url(../../assets/fonts/DynamicTrooper.woff2) format('woff2');
 }
 
 *{
     margin: 0;
     padding: 0;
-    font-family: 'bebas';
+    font-family: 'vcrosd';
 }
 
 .page{
@@ -56,17 +81,19 @@
 .title{
     height: 40vh;
     width: 100%;
+    padding-left: 2rem;
     position: fixed;
     bottom: 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
     /*border: 1px solid blue;*/
 }
 
 .main-title{
-    font-size: 15rem;
+    font-family: 'vcrosd';
+    font-size: 10rem;
     padding: 0;
     /*border: 1px solid green;*/
 }
@@ -76,6 +103,24 @@
     padding-left: 2rem;
     font-size: 3rem;
     /*border: 1px solid green;*/
+}
+
+#web{
+    font-family: "minecraft";
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#fashion{
+    font-family: "vogue";
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#art{
+    font-family: "akira";
+    font-size: 2rem;
+    padding-bottom: 1rem;
 }
 
 .work-links{
@@ -131,7 +176,7 @@
   }
   
   .work {
-    height: 50vh;
+    height: relative;
     width: 20%;
     flex: 0 0 auto;
     display: flex;
@@ -145,5 +190,10 @@
     height: 300px;
     object-fit: cover;
   }
+
+  .work:hover {
+    transform: scale(1.1); /* Increase size on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition */
+}
 
 
