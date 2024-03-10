@@ -10,10 +10,11 @@ import reportWebVitals from './reportWebVitals';
 const rootElement = getElementById('root');
 render(
   <React.StrictMode>
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
         <App />
     </BrowserRouter>
-  </React.StrictMode>, rootElement
+  </React.StrictMode>, 
+  rootElement
 );
 
 // If you want to start measuring performance in your app, pass a function
