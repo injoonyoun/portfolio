@@ -8,16 +8,14 @@ import reportWebVitals from './reportWebVitals';
 
 
 const rootElement = document.getElementById('root');
-console.log("about to render");
 render(
   <React.StrictMode>
-    <BrowserRouter basename="http://injoonyoun.github.io/portfolio">
+    <BrowserRouter basename="/portfolio">
         <App />
     </BrowserRouter>
   </React.StrictMode>,
   rootElement
 );
-console.log("rendered");
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
