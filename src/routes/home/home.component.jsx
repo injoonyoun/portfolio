@@ -10,7 +10,7 @@ import { gsap } from "gsap";
 const works = [
     {id: 1, name: 'CERAMICS', image: ceramic, fontFamily: "magazine"},
     {id: 2, name: 'PROJECT', image: crochet, fontFamily: "plank"},
-    {id: 3, name: 'CAWI TOOLKIT', image: none, fontFamily: "minecraft"}
+    {id: 3, name: 'CAWI', image: none, fontFamily: "minecraft"}
 ];
 
 const Square = ({ work, index, fontFamily, handleWorkHover, handleWorkHoverOut }) => {
@@ -18,8 +18,7 @@ const Square = ({ work, index, fontFamily, handleWorkHover, handleWorkHoverOut }
         <div className="work" id={`work-${index}`}>
             <Link className="work-links" to={`/work/${work.id}`}>
                 <img className="work-img" src={work.image} alt={work.name} onMouseEnter={() => handleWorkHover(fontFamily)} onMouseLeave={handleWorkHoverOut} />
-                <h3>{work.name}</h3>
-                <p>{work.description}</p>
+                <h3 className="work-name">{work.name}</h3>
             </Link>
         </div>
     );
@@ -116,12 +115,15 @@ const Home = () => {
     };
 
     return (
-        <section className="page">
+        <section className="home-page">
             <section className="content">
                 <Carousel handleWorkHover={handleWorkHover} handleWorkHoverOut={handleWorkHoverOut}  />
             </section>
             <section className="title">
                 <h1 ref={titleRef} className="main-title" id="title">YOON IN JOON</h1>
+                <h1 className="vertical-title-one">YOON</h1>
+                <h1 className="vertical-title-two">IN</h1>
+                <h1 className="vertical-title-three">JOON</h1>
             </section>
         </section>
     );

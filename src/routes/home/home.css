@@ -64,7 +64,7 @@
     font-family: 'vcrosd';
 }
 
-.page{
+.home-page{
     padding:0;
     margin:0;
     height: 90vh;
@@ -98,38 +98,11 @@
     /*border: 1px solid green;*/
 }
 
-@media screen and (max-width: 767px) {
-
-    .main-title{
-        font-family: 'vcrosd';
-        font-size: 5rem;
-    }
-
-}
-
 .categories{
     padding-bottom: 4rem;
     padding-left: 2rem;
     font-size: 3rem;
     /*border: 1px solid green;*/
-}
-
-#web{
-    font-family: "minecraft";
-    font-size: 2rem;
-    padding-bottom: 1rem;
-}
-
-#fashion{
-    font-family: "vogue";
-    font-size: 2rem;
-    padding-bottom: 1rem;
-}
-
-#art{
-    font-family: "akira";
-    font-size: 2rem;
-    padding-bottom: 1rem;
 }
 
 .work-links{
@@ -205,4 +178,89 @@
     transition: transform 0.3s ease; /* Add a smooth transition */
 }
 
+/*-----------------------------------mobile----------------------------------*/
+
+.vertical-title-one{
+    display: none;
+}
+
+.vertical-title-two{
+    display: none;
+}
+
+.vertical-title-three{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .home-page{
+        display: auto;
+        flex-direction: row;
+    }
+
+    .title{
+        height: 90vh;
+        width:100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding:0;
+    }
+
+    .main-title{
+        display: none;
+    }
+
+    .vertical-title-one{
+        font-size: 12rem;
+        display: block; 
+        writing-mode: vertical-lr; 
+        text-orientation: upright; 
+        white-space: nowrap
+    }
+
+    .vertical-title-two{
+        font-size: 10rem;
+        display: block; 
+        writing-mode: vertical-lr; 
+        text-orientation: upright;
+        white-space: nowrap
+    }
+
+    .vertical-title-three{
+        font-size: 12rem;
+        display: block; 
+        writing-mode: vertical-lr; 
+        text-orientation: upright;
+        white-space: nowrap
+    }
+
+    .content{
+        padding: 0;
+        top:0;
+        margin:0;
+        height: 30vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .carousel {
+        justify-content: flex-start; 
+    }
+
+    .work-img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .work-name{
+        display: none;
+    }
+    
+
+}
 
