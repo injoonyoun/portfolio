@@ -10,9 +10,9 @@ const Navigation = () => {
         <Fragment>
             <header className="navbar">
                 <ul>
-                    <li><p className="nav-link"><a href='/portfolio'>HOME</a></p></li>
-                    <li><p className="nav-link"><a href='/portfolio/shop'>SHOP</a></p></li>
-                    <li><p className="nav-link"><a href='/portfolio/about'>ABOUT</a></p></li>
+                    <li><p className="nav-link"><Link className="a" to='/'>HOME</Link></p></li>
+                    <li><p className="nav-link"><Link className="a" to='/shop'>SHOP</Link></p></li>
+                    <li><p className="nav-link"><Link className="a" to='/about'>ABOUT</Link></p></li>
                 </ul>
             </header>
             <Outlet />

@@ -22,16 +22,16 @@
     display: inline-block;
 }
 
-.navbar ul li a{
+.navbar ul li .a{
     padding: 1rem;
     text-decoration: none;
     color:rgb(165, 165, 165);
 }
 
-.navbar ul li a:hover{
+.navbar ul li .a:hover{
     color: black;
 }
 
-.navbar ul li a:active{
+.navbar ul li .a:active{
     color: black;
 }

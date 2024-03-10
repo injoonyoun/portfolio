@@ -200,6 +200,7 @@
     }
 
     .title{
+        padding-top: 5rem;
         height: 90vh;
         width:100%;
         display: flex;
@@ -213,7 +214,7 @@
     }
 
     .vertical-title-one{
-        font-size: 12rem;
+        font-size: 9rem;
         display: block; 
         writing-mode: vertical-lr; 
         text-orientation: upright; 
@@ -221,7 +222,7 @@
     }
 
     .vertical-title-two{
-        font-size: 10rem;
+        font-size: 9rem;
         display: block; 
         writing-mode: vertical-lr; 
         text-orientation: upright;
@@ -229,7 +230,7 @@
     }
 
     .vertical-title-three{
-        font-size: 12rem;
+        font-size: 9rem;
         display: block; 
         writing-mode: vertical-lr; 
         text-orientation: upright;
@@ -253,8 +254,8 @@
     }
 
     .work-img{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
 
     .work-name{
