@@ -16,7 +16,7 @@ const works = [
 const Square = ({ work, index, fontFamily, handleWorkHover, handleWorkHoverOut }) => {
     return (
         <div className="work" id={`work-${index}`}>
-            <Link className="work-links" to={`/works/${work.id}`}>
+            <Link className="work-links" to={`/work/${work.id}`}>
                 <img className="work-img" src={work.image} alt={work.name} onMouseEnter={() => handleWorkHover(fontFamily)} onMouseLeave={handleWorkHoverOut} />
                 <h3>{work.name}</h3>
                 <p>{work.description}</p>
