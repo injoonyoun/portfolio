@@ -7,13 +7,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 
-const rootElement = getElementById('root');
+const rootElement = document.getElementById('root');
 render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
         <App />
     </BrowserRouter>
-  </React.StrictMode>, 
+  </React.StrictMode>,
   rootElement
 );
 
