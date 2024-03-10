@@ -9,7 +9,7 @@ import WorkTwo from './routes/work2/work2.components';
 import WorkThree from './routes/work3/work3.components';
 
 const App = () => {
-
+  console.log('Rendering App component...');
   return (
     <Routes>
       <Route path='/' element={<Navigation />}>
