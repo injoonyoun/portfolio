@@ -1,25 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.3eb27405.css",
-    "main.js": "/portfolio/static/js/main.f8f7f1ff.js",
+    "main.css": "/portfolio/static/css/main.1670727b.css",
+    "main.js": "/portfolio/static/js/main.a25bb696.js",
     "static/js/453.bb257cf5.chunk.js": "/portfolio/static/js/453.bb257cf5.chunk.js",
     "static/media/crochet.jpg": "/portfolio/static/media/crochet.72a0def16fa22f25e095.jpg",
     "static/media/ceramic.jpg": "/portfolio/static/media/ceramic.684a67c00654e2d8f979.jpg",
-    "static/media/SuperOcean.woff2": "/portfolio/static/media/SuperOcean.3e99d98f5ef2d1434673.woff2",
+    "static/media/Heartless.woff2": "/portfolio/static/media/Heartless.38ff1fa7fa156b69e36e.woff2",
     "static/media/default.jpg": "/portfolio/static/media/default.fbf79b1de76d4828fde7.jpg",
+    "static/media/MagazineLetterByBrntlbrnl-Rg.woff2": "/portfolio/static/media/MagazineLetterByBrntlbrnl-Rg.5c6de8e7560f270b8216.woff2",
+    "static/media/Marola.woff2": "/portfolio/static/media/Marola.fcc787a32f4fabfbab79.woff2",
     "static/media/BebasNeue-Regular.woff2": "/portfolio/static/media/BebasNeue-Regular.bc1037b6180b03cd2af4.woff2",
-    "static/media/Skincake.woff2": "/portfolio/static/media/Skincake.a2c6660a23c8a741e2e3.woff2",
+    "static/media/VCROSDMono.woff2": "/portfolio/static/media/VCROSDMono.211012147dbac509dcf9.woff2",
+    "static/media/DOCALLISMEONSTREET.woff2": "/portfolio/static/media/DOCALLISMEONSTREET.0e4ecef5c7f59692e26b.woff2",
+    "static/media/DynamicTrooper.woff2": "/portfolio/static/media/DynamicTrooper.8ba7f5927acdce40d0c7.woff2",
     "static/media/PlanetKosmos.woff2": "/portfolio/static/media/PlanetKosmos.3036a0230752b2db8636.woff2",
     "static/media/Vogue-Regular.woff2": "/portfolio/static/media/Vogue-Regular.36729a7a39c41b8959be.woff2",
     "static/media/AkiraExpanded-SuperBold.woff2": "/portfolio/static/media/AkiraExpanded-SuperBold.2a9e2bf7f0958b9b0359.woff2",
     "static/media/Minecraft.woff2": "/portfolio/static/media/Minecraft.22fa2e49e2c32ae1e67f.woff2",
     "index.html": "/portfolio/index.html",
-    "main.3eb27405.css.map": "/portfolio/static/css/main.3eb27405.css.map",
-    "main.f8f7f1ff.js.map": "/portfolio/static/js/main.f8f7f1ff.js.map",
+    "main.1670727b.css.map": "/portfolio/static/css/main.1670727b.css.map",
+    "main.a25bb696.js.map": "/portfolio/static/js/main.a25bb696.js.map",
     "453.bb257cf5.chunk.js.map": "/portfolio/static/js/453.bb257cf5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3eb27405.css",
-    "static/js/main.f8f7f1ff.js"
+    "static/css/main.1670727b.css",
+    "static/js/main.a25bb696.js"
   ]
 }
