@@ -98,6 +98,10 @@
     /*border: 1px solid green;*/
 }
 
+.main-title-before{
+    display: none;
+}
+
 .categories{
     padding-bottom: 4rem;
     padding-left: 2rem;

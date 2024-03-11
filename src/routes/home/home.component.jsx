@@ -1,10 +1,14 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
 import { Outlet, Link } from 'react-router-dom';
 import './home.css'; 
-import none from '../../assets/img/default.jpg'
-import ceramic from '../../assets/img/ceramic.jpg'
-import crochet from '../../assets/img/crochet.jpg'
+import none from '../../assets/img/default.jpg';
+import ceramic from '../../assets/img/ceramic.jpg';
+import crochet from '../../assets/img/crochet.jpg';
 import { gsap } from "gsap";
+
+import { TextPlugin } from 'gsap/all';
+
+gsap.registerPlugin(TextPlugin);
 
 
 const works = [
@@ -106,6 +110,22 @@ const Carousel = ({ handleWorkHover, handleWorkHoverOut }) => {
 const Home = () => {
     const titleRef = useRef(null);
 
+    useLayoutEffect(() => {
+        const titleAnimIn = () => {
+            gsap.to(titleRef.current, {
+                duration: 2,
+                text: {
+                    value: "YOUN IN JOON",
+                    delimiter: ""
+                },
+                ease: "none",
+            });
+        }
+
+        titleAnimIn();
+
+    }, []);
+
     const handleWorkHover = (fontFamily) => {
         gsap.to(titleRef.current, { fontFamily, duration: 0 });
     };
@@ -120,7 +140,7 @@ const Home = () => {
                 <Carousel handleWorkHover={handleWorkHover} handleWorkHoverOut={handleWorkHoverOut}  />
             </section>
             <section className="title">
-                <h1 ref={titleRef} className="main-title" id="title">YOON IN JOON</h1>
+                <h1 ref={titleRef} className="main-title" id="title"></h1>
                 <h1 className="vertical-title-one">YOON</h1>
                 <h1 className="vertical-title-two">IN</h1>
                 <h1 className="vertical-title-three">JOON</h1>

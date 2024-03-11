@@ -7,3 +7,7 @@
 .ab-title{
     font-size: 10rem;
 }
+
+.ab-title-before{
+    display: none;
+}

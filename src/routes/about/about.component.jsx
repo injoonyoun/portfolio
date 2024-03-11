@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
 import './about.css'; 
+import {gsap} from "gsap";
+import { TextPlugin } from 'gsap/all';
+
+gsap.registerPlugin(TextPlugin);
 
 const About = () => {
+
+    const titleRef = useRef(null);
+
+    useLayoutEffect(() => {
+        const titleAnimIn = () => {
+            gsap.to(titleRef.current, {
+                duration: 2,
+                text: {
+                    value: "ABOUT",
+                    delimiter: ""
+                }
+            });
+        }
+
+        titleAnimIn();
+
+    }, []);
+
     return (
         <section className="ab-page">
-            <h1 className="ab-title">ABOUT</h1>
+            <h1 ref={titleRef} className="ab-title"></h1>
         </section>
     );
   
