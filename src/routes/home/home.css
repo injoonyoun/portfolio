@@ -214,7 +214,7 @@
     }
 
     .vertical-title-one{
-        font-size: 8rem;
+        font-size: 7rem;
         display: block; 
         writing-mode: vertical-lr; 
         text-orientation: upright; 
@@ -222,7 +222,7 @@
     }
 
     .vertical-title-two{
-        font-size: 8rem;
+        font-size: 7rem;
         display: block; 
         writing-mode: vertical-lr; 
         text-orientation: upright;
@@ -230,7 +230,7 @@
     }
 
     .vertical-title-three{
-        font-size: 8rem;
+        font-size: 7rem;
         display: block; 
         writing-mode: vertical-lr; 
         text-orientation: upright;
