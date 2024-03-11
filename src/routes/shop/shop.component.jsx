@@ -13,21 +13,23 @@ const Shop = () => {
     useLayoutEffect(() => {
         const titleAnimIn = () => {
             gsap.to(titleRef.current, {
-                duration: 2,
+                duration: 1,
                 text: {
                     value: "SHOP",
                     delimiter: ""
-                }
+                },
+                delay: 0.5,
             });
         }
 
         const messageAnimIn = () => {
             gsap.to(messageRef.current, {
-                duration: 5,
+                duration: 4,
                 text: {
                     value: "Sorry, nothing here to see yet. :(",
                     delimiter: ""
-                }
+                },
+                delay: 1.5,
             });
         }
 

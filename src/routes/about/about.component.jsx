@@ -12,11 +12,12 @@ const About = () => {
     useLayoutEffect(() => {
         const titleAnimIn = () => {
             gsap.to(titleRef.current, {
-                duration: 2,
+                duration: 1,
                 text: {
                     value: "ABOUT",
                     delimiter: ""
-                }
+                },
+                delay: 0.5,
             });
         }
 

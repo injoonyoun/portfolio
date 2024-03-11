@@ -119,6 +119,7 @@ const Home = () => {
                     delimiter: ""
                 },
                 ease: "none",
+                delay: 0.5,
             });
         }
 
