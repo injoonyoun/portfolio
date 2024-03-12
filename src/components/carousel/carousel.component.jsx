@@ -1,11 +1,9 @@
 import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
-import { Outlet, Link } from 'react-router-dom';
 import Square from '../square/square.component.jsx';
 import './carousel.css'; 
 import none from '../../assets/img/default.jpg';
 import ceramic from '../../assets/img/ceramic.jpg';
 import crochet from '../../assets/img/crochet.jpg';
-import { gsap } from "gsap";
 
 const works = [
     {id: 1, name: '', description: '', image: ceramic, fontFamily: "magazine"},
