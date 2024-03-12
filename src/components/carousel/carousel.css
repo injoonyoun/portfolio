@@ -1,0 +1,26 @@
+.carousel::-webkit-scrollbar {
+    display: none; 
+}
+
+.carousel {
+    position: relative; 
+    padding: 0;
+    margin: 0;
+    height:50vh;
+    width: fit-content; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    /*border: 1px solid yellow;*/
+}
+
+@media screen and (max-width: 767px) {
+    .carousel {
+        justify-content: flex-start; 
+    } 
+}
