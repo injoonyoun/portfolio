@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
-import { Outlet, Link } from 'react-router-dom';
+import React from "react";
+import {Link } from 'react-router-dom';
 import './square.css'; 
 
 const Square = ({ work, index, fontFamily, handleWorkHover, handleWorkHoverOut }) => {

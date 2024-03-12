@@ -1,9 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Home from './routes/home/home.component';
-import Carousel from './components/carousel/carousel.component';
-import Grid from './components/grid/grid.component';
-import Spiral from './components/spiral/spiral.component';
 import Navigation from './routes/navigation/navigation.component';
 import Shop from './routes/shop/shop.component';
 import About from './routes/about/about.component';

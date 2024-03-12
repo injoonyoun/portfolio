@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
+import React, { useEffect, useRef} from "react";
 import Square from '../square/square.component.jsx';
 import './carousel.css'; 
 import none from '../../assets/img/default.jpg';
