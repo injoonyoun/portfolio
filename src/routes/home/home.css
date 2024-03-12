@@ -208,7 +208,7 @@
         width:100%;
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         padding:0;
     }
 
@@ -217,7 +217,7 @@
     }
 
     .vertical-title-one{
-        font-size: 7rem;
+        font-size: 5rem;
         display: block; 
         writing-mode: vertical-lr; 
         text-orientation: upright; 
@@ -225,7 +225,7 @@
     }
 
     .vertical-title-two{
-        font-size: 7rem;
+        font-size: 5rem;
         display: block; 
         writing-mode: vertical-lr; 
         text-orientation: upright;
@@ -233,7 +233,7 @@
     }
 
     .vertical-title-three{
-        font-size: 7rem;
+        font-size: 5rem;
         display: block; 
         writing-mode: vertical-lr; 
         text-orientation: upright;
@@ -250,7 +250,15 @@
         align-items: center;
         justify-content: center;
         z-index: 1;
-    }   
+    }  
+    
+    .display-options{
+        display:none;
+    }
+
+    .fields{
+        display: none;
+    }
 
 }
 
