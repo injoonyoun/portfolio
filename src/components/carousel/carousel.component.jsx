@@ -81,8 +81,10 @@ const Carousel = ({ handleWorkHover, handleWorkHoverOut }) => {
                 work={work} 
                 index={index}
                 fontFamily={work.fontFamily} 
-                handleWorkHover={handleWorkHover} // Pass down handleWorkHover prop
-                handleWorkHoverOut={handleWorkHoverOut} // Pass down handleWorkHoverOut prop
+                handleWorkHover={handleWorkHover} 
+                handleWorkHoverOut={handleWorkHoverOut}
+                //sOpacity={work.sOpacity}
+                initialOpacity={1} 
             />
             ))}
         </div>
