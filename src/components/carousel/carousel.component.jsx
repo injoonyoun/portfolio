@@ -1,6 +1,6 @@
 import React, { useEffect, useRef} from "react";
 import Square from '../square/square.component.jsx';
-import './carousel.css'; 
+import './carousel.css';
 import none from '../../assets/img/default.jpg';
 import ceramic from '../../assets/img/ceramic.jpg';
 import crochet from '../../assets/img/crochet.jpg';
@@ -11,7 +11,7 @@ const works = [
     {id: 3, name: '', description: '', image: none, fontFamily: "minecraft"}
 ];
 
-const Carousel = ({ handleWorkHover, handleWorkHoverOut }) => {
+const Carousel = ({/* handleWorkHover, handleWorkHoverOut */}) => {
     const carouselRef = useRef(null);
     const loopedWorks = [...works, ...works, ...works];
 
@@ -80,9 +80,9 @@ const Carousel = ({ handleWorkHover, handleWorkHoverOut }) => {
                 key={index} 
                 work={work} 
                 index={index}
-                fontFamily={work.fontFamily} 
-                handleWorkHover={handleWorkHover} 
-                handleWorkHoverOut={handleWorkHoverOut}
+                //fontFamily={work.fontFamily} 
+                /*handleWorkHover={handleWorkHover} 
+                handleWorkHoverOut={handleWorkHoverOut}*/
                 //sOpacity={work.sOpacity}
                 initialOpacity={1} 
             />

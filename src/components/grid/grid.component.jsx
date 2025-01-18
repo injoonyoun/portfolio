@@ -51,7 +51,7 @@ const Grid = ({ handleWorkHover, handleWorkHoverOut }) => {
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
                 const index = Number(entry.target.getAttribute("data-index"));
-                if (entry.isIntersecting && entry.intersectionRatio === 1.0) {
+                if (entry.intersectionRatio === 1.0) {
                     const square = entry.target.querySelector('.work');
                     gsap.to(square, { 
                         opacity: 1,

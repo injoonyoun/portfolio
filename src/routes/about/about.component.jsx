@@ -17,7 +17,7 @@ const About = () => {
                     value: "ABOUT",
                     delimiter: ""
                 },
-                delay: 0.5,
+                delay: 1,
             });
         }
 

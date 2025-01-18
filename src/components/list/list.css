@@ -1,0 +1,26 @@
+.list{
+    position: fixed;
+    bottom: 0;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: scroll;
+}
+
+.work-list-name{
+    font-size: 5rem;
+}
+
+.work-list-links{
+    text-decoration: none;
+    color:rgb(165, 165, 165);
+}
+
+.work-list-links:hover{
+    text-decoration: none;
+    color:black;
+}
