@@ -70,7 +70,7 @@ body{
     overflow-x: hidden;
 }
 
-.home::-webkit-scrollbar{
+body::-webkit-scrollbar{
     display: none;
 }
 
